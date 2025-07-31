@@ -68,7 +68,7 @@ int main() {
     list->push(10);
     list->push(20);
     list->push(30);
-    cout << list->pop() << endl;  // Outputs: 30
+    cout << (*list).pop() << endl;  // Outputs: 30
     cout << list->pop() << endl;  // Outputs: 20
     cout << list->pop() << endl;  // Outputs: 10
     delete list;

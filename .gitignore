@@ -1,0 +1,37 @@
+# Compiled Object files
+*.o
+*.obj
+
+# Executables
+*.exe  # Windows executables
+*.out  # Linux/macOS executables
+*.app  # macOS application bundles
+
+# Dynamic Libraries
+*.so   # Linux shared libraries
+*.dylib # macOS dynamic libraries
+*.dll  # Windows dynamic link libraries
+
+# Static Libraries
+*.a    # Linux/macOS static libraries
+*.lib  # Windows static libraries
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Build directories (common for CMake, Make, etc.)
+build/
+bin/
+Debug/
+Release/
+x64/
+x86/
+
+# IDE specific files (e.g., Visual Studio)
+.vs/
+*.sln.DotSettings.user
+*.vcxproj.user
+__pycache__
+
+tempCodeRunnerFile.cpp
