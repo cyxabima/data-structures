@@ -69,7 +69,8 @@ class LinkedList:
             temp = temp.next
             counter += 1
 
-        prev.next = new_node
+        prev.next = new_node  # there is chance of exception may be prev is none as will not execute
+        # if index is not zero but list is empty
         new_node.next = temp
 
     def remove(self, val):
@@ -92,6 +93,7 @@ class LinkedList:
             temp = temp.next
         else:
             return  # this return is used if no val found then loop with exit with break and you know it
+            #  we can handle this will if as well if temp is None
 
         prev.next = temp.next
 
@@ -105,6 +107,14 @@ class LinkedList:
 
         rep_str = rep_str.rstrip(", ") + "]"
         return rep_str
+
+    def __len__(self):
+        temp = self.head
+        counter = 0
+        while temp is not None:
+            counter += 1
+            temp = temp.next
+        return counter
 
 
 l = LinkedList()
